@@ -1,3 +1,4 @@
+import models.Movie;
 
 public class App {
     public static void main(String[] args) throws Exception {
@@ -6,7 +7,8 @@ public class App {
         // ordenar la lista de películas por título utilizando el método sortByTitle del
         // MovieController
         // imprimir la lista de películas ordenada
-
+        Movie[] movies = generateMoviesList();
+        controllers.MovieController
     }
 
     /**
