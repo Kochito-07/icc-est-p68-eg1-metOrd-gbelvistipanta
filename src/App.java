@@ -1,3 +1,4 @@
+import controllers.MovieController;
 import models.Movie;
 
 public class App {
@@ -8,7 +9,12 @@ public class App {
         // MovieController
         // imprimir la lista de películas ordenada
         Movie[] movies = generateMoviesList();
-        controllers.MovieController
+        controllers.MovieController controller = new MovieController();
+        for (int i = 0; i < movies.length; i ++){
+        if (movies[i] != null) {
+            System.out.println(movies[i]);
+        }
+        }
     }
 
     /**
